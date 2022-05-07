@@ -1,0 +1,22 @@
+.home__container{
+    display: flex;
+    color: var(--text-color);
+    margin-top: 70px;
+    align-items: baseline;
+}
+.home__info{
+    display: flex;
+    margin-left: 20px;
+}
+.home__info i{
+    color: blue;
+}
+@media screen and (max-width:768px){
+    .home__container{
+        display: flex;
+        color: var(--text-color);
+        margin-top: 70px;
+        margin-left: 10px;
+        align-items: baseline;
+    } 
+}

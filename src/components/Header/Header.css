@@ -1,0 +1,103 @@
+.header{
+    background-color: var(--background-color);
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    color: var(--text-color);
+    margin:0;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.20);
+    z-index: 10;
+}
+.header__cart{
+  display: block;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header__search{
+    display: flex;
+    background-color:inherit;
+    align-items: center;
+    border-bottom: 1px solid rgb(137, 140, 143);
+}
+.header__input__search{
+    color: var(--text-color);
+    padding: 0px 100px 0px 0px;
+    font-size: 20px;
+    background-color: inherit;
+    outline: none;
+    margin-left: 10px;
+    border: none;
+}
+.header__right__side{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.total__price{
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+    font-size: 17px;
+}
+.logo{
+    font-size: 30px;
+    text-align: center;
+}
+.header__logo{
+    display: flex;
+    margin: 10px;
+}
+.button__theme{
+    border: none;
+    outline: none;
+    padding: 10px 0 0 0 ;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: var(--background-color);
+    color:var(--text-color);
+    cursor: pointer;
+}
+.button__theme:active{
+    color: rgb(47, 87, 162);
+}
+.link{
+    color: var(--text-color);
+}
+.active_link{
+    color: rgb(39, 104, 150);
+    transition: color 0.4s ease-in-out;
+}
+.burger__menu{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .burger__menu{
+        display: block;
+        margin: 10px;
+    }
+    .header__right__side{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .header__input__search{
+        margin-top: 10px;
+        padding: 5px 20px 10px 5px;
+        font-size: 10px;
+        margin: 0 20px 0 5px;
+        outline: none;
+        border: none;
+    }
+    .header__search{
+        display: flex;
+        background-color:inherit;
+        align-items: center;
+        margin: 0 20px 10px 0;
+        border-bottom: 1px solid rgb(137, 140, 143);
+    }
+}

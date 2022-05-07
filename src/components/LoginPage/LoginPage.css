@@ -1,0 +1,125 @@
+.login__container{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0px 0px 200px;
+    box-shadow: 0px 4px 7px rgba(0,0,0,0.40);
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.input__login{
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 0px 0 20px 0;
+    padding: 10px 100px 10px 10px;
+    background-color: rgb(240, 240, 240);
+}
+.input__password{
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 0px 0 20px 0;
+    background-color: rgb(237, 237, 237);
+    padding: 10px 100px 10px 10px;
+}
+.button__login{
+    align-self: flex-start;
+    margin-left: 90px;
+    font-size: 17px;
+    padding: 8px 25px 8px 25px;
+    cursor: pointer;
+    background-color: var(--background-button-color);
+    border: none;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.20);
+    border-radius: 5px;
+}
+.button__login:hover{
+    color: rgb(255, 255, 255);
+    background-color:rgb(39, 104, 150);
+}
+@media screen and (max-width: 1350px) {
+    .login__container{
+        margin: 150px 0px 0px 150px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .login__container{
+        margin: 100px 0px 0px 100px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .login__container{
+        margin: 100px 0px 0px 50px;
+    }
+}
+@media screen and (max-width: 829px) {
+    .login__container{
+        margin: 100px 0px 0px 0px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .login__container{
+        align-items: center;
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .login__container{
+        margin: 100px 20px 0 10px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .login__container{
+        margin: 100px 0px 0px 0px;
+        width: 100%;
+    }
+    .button__login{
+        align-self: flex-start;
+        margin-left: 5px;
+        font-size: 17px;
+        padding: 8px 20px 8px 20px;
+        cursor: pointer;
+        background-color: rgb(31, 31, 31);
+        border: none;
+        color: aliceblue;
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.20);
+        border-radius: 5px;
+    }
+    .input__login{
+        font-size: 17px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        margin: 0px 0 20px 0;
+        padding: 10px 20px 10px 10px;
+        background-color: rgb(218, 218, 218);
+    }
+    .input__password{
+        font-size: 17px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        margin: 0px 0 20px 0;
+        background-color: rgb(218, 218, 218);
+        padding: 10px 20px 10px 10px;
+    }
+    .login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 5px 0 5px;
+    }
+}

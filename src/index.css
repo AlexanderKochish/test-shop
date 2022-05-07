@@ -1,3 +1,28 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+html[data-theme='light']{
+  --background-color: rgb(255, 255, 255);
+  --text-color:rgb(0, 0, 0);
+  --link-color:rgb(195, 195, 195);
+  --price-color:rgb(0, 165, 0);
+  --button-color:white;
+  --background-button-color: rgb(0, 0, 0);
+  --card-shadow: 2px 5px 8px rgba(0,0,0,0.80);
+}
+html[data-theme='dark']{
+  --background-color: rgb(55, 60, 71);
+  --text-color:rgb(255, 255, 255);
+  --link-color:rgb(195, 195, 195);
+  --price-color:rgb(0, 165, 0);
+  --background-button-color: rgb(61, 73, 113);
+  --card-shadow: 2px 5px 8px rgb(0, 166, 255);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +30,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  overflow: auto;
+}
+body::-webkit-scrollbar{
+  width: 0;
+  height: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

@@ -1,0 +1,53 @@
+.desktop__card{
+    margin: 10px;
+    width: min-content;
+    background-color: var(--background-color);
+    cursor: pointer;
+}
+.desktop__card:hover{
+    box-shadow: var(--card-shadow);
+    transform: scale(1.05,1.05);
+    transition-duration: 0.4s;
+}
+.desktop__img{
+    width: 180px;
+    height: 150px;
+    margin: 50px 0 50px 0;
+    margin: 0 auto;
+    padding: 5px;
+}
+.desktop__title{
+    color: var(--text-color);
+    padding: 5px;
+}
+.desktop__title h3{
+    font-size: 23px;
+}
+.desktop__title p{
+    font-size: 17px;
+}
+.desktop__title span{
+    font-weight: 500;
+    color: var(--price-color);
+    font-size: 20px;
+    margin-right: 30px;
+}
+.desktop__price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart{
+    outline: none;
+    border: none;
+    color: var(--price-color);
+    cursor: pointer;
+    font-size: 30px;
+    padding-top: 10px;
+    transition: transform 0.4s ease;
+}
+.cart:hover{
+    color: rgb(0, 119, 255);
+    transition: color 0.4s ease-in-out;
+    transform: translateY(-2px);
+}
